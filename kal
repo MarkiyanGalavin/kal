@@ -1,0 +1,24 @@
+while True:
+            print("Вас вітає калькулятор!!!")
+            num1 = float(input("Ведіть перше число: "))
+            num2 = float(input("Ведіть друге число: "))
+
+            sign = input("""Виберіть знак ( "-"  "+"  "*"  "/" "//" "%" "**" ) Ваший вибір : """)
+
+            if sign == "+" :
+                print("Виконане додавання двох чисел" '\n' '{} + {} = {}'. format(num1,num2, num1 + num2))
+            elif sign == "-" :
+                print("Виконане віднімання двох чисел" '\n' '{} - {} = {}'. format(num1,num2, num1 - num2))
+            elif sign == "*" :
+                 print("Виконане додавання двох чисел" '\n' '{} * {} = {}'. format(num1,num2, num1 * num2))
+            elif sign == "/" :
+                 print("Виконане ділення двох чисел" '\n' '{} / {} = {}'. format(num1,num2, num1 / num2))
+            elif sign == "//":
+                print("скільки разів num2 вмістиця в num1" '\n' '{} // {} = {}'. format(num1,num2, num1 // num2))
+            elif sign == "%":
+                print("виконано дію ділення з остачею" '\n' '{} % {} = {}'. format(num1,num2, num1 % num2))
+            elif sign == "**":
+                print("Виконано дію піднесення до степіню" '\n' '{} ** {} = {}'.format(num1, num2, num1 ** num2))
+            else:
+                print("Error")
+                break
